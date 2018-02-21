@@ -48,7 +48,7 @@ font-3 = FontAwesome5Free:style=Solid:pixelsize=14:antialias=false;3
 font-4 = FontAwesome5Brands:style=Solid:pixelsize=14:antialias=false;3
 
 modules-left = i3
-modules-center = touchmenu
+modules-center = i3touchmenu
 modules-right = filesystem xbacklight volume xkeyboard memory cpu wlan eth battery temperature date 
 
 tray-position = right
@@ -70,7 +70,7 @@ tray-padding = 2
 cursor-click = pointer
 cursor-scroll = ns-resize
 
-[module/touchmenu]
+[module/i3touchmenu]
 type = custom/menu
 
 expand-right = true
@@ -93,11 +93,11 @@ menu-0-2-exec = menu-open-3
 menu-0-3 = 
 menu-0-3-exec = i3-msg 'fullscreen toggle'
 menu-0-4 = 
-menu-0-4-exec = exec panther_launcher &
+menu-0-4-exec = exec xlunch -Wt
 menu-0-5 = 
 menu-0-5-exec = menu-open-4
 menu-0-6 = 
-menu-0-6-exec = exec onboard
+menu-0-6-exec = exec onboard &
 
 menu-1-0 = 
 menu-1-0-exec = menu-open-0
