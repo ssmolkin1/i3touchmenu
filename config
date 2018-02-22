@@ -6,6 +6,7 @@
 ;   The README contains alot of information
 ;
 ;=====================================================
+
 [colors]
 ;background = ${xrdb:color0:#222}
 background = #222
@@ -20,7 +21,7 @@ alert = #bd2c40
 [bar/example]
 ;monitor = ${env:MONITOR:HDMI-1}
 width = 100%
-height = 27
+height = 35
 ;offset-x = 1%
 ;offset-y = 1%
 radius = 6.0
@@ -33,7 +34,7 @@ line-size = 3
 line-color = #f00
 
 border-size = 4
-border-color = #00000000
+border-color = #0000000
 
 padding-left = 0
 padding-right = 2
@@ -41,20 +42,21 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 2
 
-font-0 = fixed:pixelsize=10;1
-font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
-font-2 = siji:pixelsize=10;1
+font-0 = fixed:pixelsize=16;1
+font-1 = unifont:fontformat=truetype:size=14:antialias=false;0
+font-2 = siji:pixelsize=16;1
 font-3 = FontAwesome5Free:style=Solid:pixelsize=14:antialias=false;3
 font-4 = FontAwesome5Brands:style=Solid:pixelsize=14:antialias=false;3
 
-modules-left = i3
+modules-left = i3  xwindow
 modules-center = i3touchmenu
-modules-right = filesystem xbacklight volume xkeyboard memory cpu wlan eth battery temperature date 
+modules-right = filesystem xbacklight volume xkeyboard memory cpu eth temperature date 
 
 tray-position = right
 tray-padding = 2
 ;tray-transparent = true
 ;tray-background = #0063ff
+;tray-maxsize = 20
 
 ;wm-restack = bspwm
 ;wm-restack = i3
@@ -69,6 +71,22 @@ tray-padding = 2
 
 cursor-click = pointer
 cursor-scroll = ns-resize
+
+[module/xwindow]
+type = internal/xwindow
+label = %title:0:30:...%
+
+[module/xkeyboard]
+type = internal/xkeyboard
+blacklist-0 = num lock
+
+label-layout = %layout%
+label-layout-underline = ${colors.secondary}
+
+label-indicator-padding = 2
+label-indicator-margin = 1
+label-indicator-background = ${colors.secondary}
+label-indicator-underline = ${colors.secondary}
 
 [module/i3touchmenu]
 type = custom/menu
@@ -93,7 +111,7 @@ menu-0-2-exec = menu-open-3
 menu-0-3 = 
 menu-0-3-exec = i3-msg 'fullscreen toggle'
 menu-0-4 = 
-menu-0-4-exec = exec xlunch -Wt
+menu-0-4-exec = exec xlunch -f "DejaVuSans/18" -s 80 -Wt
 menu-0-5 = 
 menu-0-5-exec = menu-open-4
 menu-0-6 = 
@@ -129,26 +147,6 @@ menu-4-0 = 
 menu-4-0-exec = menu-open-0
 menu-4-1 = 
 menu-4-1-exec = i3-msg 'kill'
-
-[module/xwindow]
-type = internal/xwindow
-label = %title:0:30:...%
-
-[module/xkeyboard]
-type = internal/xkeyboard
-blacklist-0 = num lock
-
-format-prefix = ""
-format-prefix-foreground = ${colors.foreground-alt}
-format-prefix-underline = ${colors.secondary}
-
-label-layout = %layout%
-label-layout-underline = ${colors.secondary}
-
-label-indicator-padding = 2
-label-indicator-margin = 1
-label-indicator-background = ${colors.secondary}
-label-indicator-underline = ${colors.secondary}
 
 [module/filesystem]
 type = internal/fs
@@ -266,7 +264,7 @@ label = %percentage_used%%
 
 [module/wlan]
 type = internal/network
-interface = net1
+interface = wlp1s0
 interval = 3.0
 
 format-connected = <ramp-signal> <label-connected>
@@ -420,6 +418,58 @@ menu-2-0 = power off
 menu-2-0-exec = sudo poweroff
 menu-2-1 = cancel
 menu-2-1-exec = menu-open-0
+
+[module/i3Move]
+type = custom/menu
+
+expand-right = true
+
+format-spacing = 1
+
+label-open =  i3
+label-open-foreground = ${colors.secondary}
+label-close =  x
+label-close-foreground = ${colors.secondary}
+label-separator = >
+label-separator-foreground = ${colors.foreground-alt}
+
+menu-0-0 = Move
+menu-0-0-exec = menu-open-1
+menu-0-1 = Split
+menu-0-1-exec = menu-open-2
+
+menu-1-0 = Left
+menu-1-0-exec = i3-msg 'move left'
+menu-1-1 = Right
+menu-1-1-exec = i3-msg 'move right'
+menu-1-2 = Up 
+menu-1-2-exec = i3-msg 'move up'
+menu-1-3 = Down
+menu-1-3-exec = i3-msg 'move down'
+
+menu-2-0 = Vertical
+menu-2-0-exec = i3-msg 'split v'
+menu-2-1 = Horizontal
+menu-2-1-exec = i3-msg 'split h'
+
+[module/i3Split]
+type = custom/menu
+
+expand-right = true
+
+format-spacing = 1
+
+label-open =  Split
+label-open-foreground = ${colors.secondary}
+label-close =  X
+label-close-foreground = ${colors.secondary}
+label-separator = >
+label-separator-foreground = ${colors.foreground-alt}
+
+menu-1-0 = Vertical
+menu-1-0-exec = i3-msg 'split v'
+menu-1-1 = Horizontal
+menu-1-1-exec = i3-msg 'split h'
 
 [settings]
 screenchange-reload = true
