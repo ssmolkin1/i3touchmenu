@@ -1,4 +1,4 @@
-# i3 touch menu - a polybar extension
+# i3 touch menu - a polybar module collection
 Using a tiling window manager makes a lot of sense for a tablet. While that may seem unintuitive at first -- think about it: Android, iOS and Windows 10's tablet mode all use tiling wms. Thus, i3 is an excellent wm for tablets running GNU/Linux. The problem is that i3 is designed to be used with a keyboard, without a mouse, so there are no touch controls built in. For the many of us who use [polybar](https://github.com/jaagr/polybar) with i3, I've put together a menu with some useful touch commands. You'll want to customize them to make sure they work for your setup, but many of these should be reusable as-is. More on configuration below.
 
 ## Before you install
