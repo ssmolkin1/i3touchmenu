@@ -12,3 +12,6 @@ Requires:
 - Onboard
 - Font awesome (sudo pacman -S ttf-fontawesome ... or something like that, can tab complete)
 - Use rofi-fontawesome (git) for dev
+
+ISSUES:
+- Launcher hogs polybar brocess when it launches a process, making touch interface unresponsive. Need to find a way around this.
