@@ -1,0 +1,11 @@
+[module/touchbrightdown]
+type=custom/text
+content="  "
+content-foreground=#fff
+click-left=xbacklight -dec 10
+
+[module/touchbrightup]
+type=custom/text
+content="    "
+content-foreground=#fff
+click-left=xbacklight -inc 10

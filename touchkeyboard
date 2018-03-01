@@ -1,0 +1,5 @@
+[module/touchkeyboard]
+type=custom/text
+content="   "
+content-foreground=#fff
+click-left=onboard

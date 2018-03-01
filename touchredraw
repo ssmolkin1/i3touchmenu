@@ -1,0 +1,5 @@
+[module/touchredraw]
+type=custom/text
+content = "    "
+content-foreground=#fff
+click-left = i3-msg 'restart'

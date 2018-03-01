@@ -1,0 +1,119 @@
+[module/i3touchmenu]
+type = custom/menu
+
+expand-right = true
+
+format-spacing = 1
+
+label-open = "    "
+label-open-foreground = #FFF
+label-close = 
+label-close-foreground = ${colors.secondary}
+label-separator = "    "
+label-separator-foreground = ${colors.foreground-alt}
+
+menu-0-0 = 
+menu-0-0-exec = menu-open-1
+menu-0-1 = 
+menu-0-1-exec = menu-open-2
+menu-0-2 = 
+menu-0-2-exec = menu-open-3
+menu-0-3 = 
+menu-0-3-exec = menu-open-4
+menu-0-4 = 
+menu-0-4-exec = menu-open-5
+menu-0-5 = 
+menu-0-5-exec = menu-open-6
+menu-0-6 = 
+menu-0-6-exec = menu-open-7
+
+menu-0-7 ="    " 
+menu-0-7-exec = menu-open-8
+
+menu-1-0 = 
+menu-1-0-exec = menu-open-0
+menu-1-1=
+menu-1-1-exec= chromium &
+menu-1-2="    "
+menu-1-2-exec = urxvt &
+
+menu-2-0 = 
+menu-2-0-exec = menu-open-0
+menu-2-1 = 
+menu-2-1-exec = i3-msg 'move left'
+menu-2-2 = 
+menu-2-2-exec = i3-msg 'move right'
+menu-2-3 = 
+menu-2-3-exec = i3-msg 'move up'
+menu-2-4 = "    "
+menu-2-4-exec = i3-msg 'move down'
+
+menu-3-0 = 
+menu-3-0-exec = menu-open-0
+menu-3-1 = 
+menu-3-1-exec = i3-msg 'layout toggle split'
+menu-3-2 = 
+menu-3-2-exec = i3-msg 'layout stacking'
+menu-3-3 =     
+menu-3-3-exec = i3-msg 'layout tabbed'
+
+menu-3-4 = "    "
+menu-3-4-exec = i3-msg 'floating toggle'
+
+menu-4-0 = 
+menu-4-0-exec = menu-open-0
+menu-4-1 = 
+menu-4-1-exec = i3-msg 'split v'
+menu-4-2 = "    "
+menu-4-2-exec = i3-msg 'split h'
+
+
+menu-5-0 = 
+menu-5-0-exec = menu-open-0
+menu-5-1 = 
+menu-5-1-exec = i3-msg 'resize grow height 5 px or 5 ppt'
+menu-5-2 =
+menu-5-2-exec = i3-msg 'resize shrink height 5 px or 5 ppt'
+
+menu-5-3 = 
+menu-5-3-exec = i3-msg 'resize grow width 5 px or 5 ppt'
+
+menu-5-4 = "    "
+menu-5-4-exec = i3-msg 'resize shrink width 5 px or 5 ppt'
+
+menu-6-0 = 
+menu-6-0-exec = menu-open-0
+menu-6-1 = 1
+menu-6-1-exec = i3-msg 'move container to workspace 1'
+menu-6-2 = 2
+menu-6-2-exec = i3-msg 'move container to workspace 2'
+menu-6-3 = 3
+menu-6-3-exec = i3-msg 'move container to workspace 3'
+menu-6-4 = 4
+menu-6-4-exec = i3-msg 'move container to workspace 4'
+menu-6-5 = 5
+menu-6-5-exec = i3-msg 'move container to workspace 5'
+menu-6-6 = 6
+menu-6-6-exec = i3-msg 'move container to workspace 6'
+menu-6-7 = 7
+menu-6-7-exec = i3-msg 'move container to workspace 7'
+menu-6-8 = 8
+menu-6-8-exec = i3-msg 'move container to workspace 8'
+menu-6-9 = 9
+menu-6-9-exec = i3-msg 'move container to workspace 9'
+menu-6-10 = "10    "
+menu-6-10-exec = i3-msg 'move container to workspace 10'
+
+menu-7-0 = 
+menu-7-0-exec = menu-open-0
+menu-7-1 = "You sure?        "
+menu-7-1-exec = i3-msg 'kill'
+
+menu-8-0 = 
+menu-8-0-exec = menu-open-0
+menu-8-1 = 
+menu-8-1-exec = xset dpms force off 
+menu-8-2 = 
+menu-8-2-exec = reboot
+menu-8-3 = "    "
+menu-8-3-exec = poweroff
