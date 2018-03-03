@@ -1,4 +1,5 @@
 [module/touchredraw]
+;; Restart i3 in order to redraw polybar to fit screen orientation
 type=custom/text
 content = "    "
 content-foreground=#fff

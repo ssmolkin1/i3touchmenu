@@ -1,10 +1,12 @@
 [module/touchbrightdown]
+;; Brightness down
 type=custom/text
 content="  "
 content-foreground=#fff
 click-left=xbacklight -dec 10
 
 [module/touchbrightup]
+;; Brightness up
 type=custom/text
 content="    "
 content-foreground=#fff

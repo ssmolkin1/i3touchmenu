@@ -53,6 +53,78 @@ When you are configuring these modules, you'll find that working with fontawsome
 /path/to/rofi-fontawesome/fontawesome-menu/fontawesome-menu -f /path/to/rofi-fontawesome/fontawesome-menu/fa5-icon-list.txt -o '-i -columns 4'
 ```
 
+## Features/Usage
+This section goes through each module and explains what each button does (going left to right).
+
+### i3touchmenu
+* Open menu
+    * Close menu
+    * Launch
+        * Back to main menu
+        * chromium
+        * urxvt
+    * Move
+        * Back to main menu
+        * Left
+        * Right
+        * Up
+        * Down
+    * Layout
+        * Back to main menu
+        * Split
+        * Stacking
+        * Tabbed
+        * Toggle floating
+    * Split
+        * Back to main menu
+        * Vertical
+        * Horizontal
+    * Resize
+        * Back to main menu
+        * Grow height
+        * Shrink height
+        * Grow width
+        * Shrink width
+    * Move to workspace
+        * Back to main menu
+        * 1
+        * 2
+        * 3
+        * 4
+        * 5
+        * 6
+        * 7
+        * 8
+        * 9
+        * 10
+    * Kill
+        * Back to main menu
+        * Kill
+    * Power
+        * Back to main menu
+        * Screen off
+        * Reboot
+        * Off
+
+### touchredraw
+
+* Restart i3 in order to redraw polybar to fit screen orientation
+           
+### touchvolume
+
+* Mute
+* Volume up
+* Volume down
+
+### touchbrightness
+
+* Brightness down
+* Brightness up
+
+### touchkeyboard
+
+* Open onscreen keyboard (onboard)
+
 ## Polybar issues
 There are a few issues with `polybar` which need some special explanation.
 ### Rotation
