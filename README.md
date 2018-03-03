@@ -1,4 +1,4 @@
-# i3 touch menu - a polybar extension
+# i3 touch menu - a polybar module collection
 
 ![screenshot](./screen.png)
 
