@@ -104,7 +104,7 @@ This section goes through each module and explains what each button does (going 
         * Back to main menu
         * Screen off
         * Reboot
-        * Off
+        * Shutdown
 
 ### touchredraw
 

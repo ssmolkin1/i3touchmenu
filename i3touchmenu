@@ -5,11 +5,11 @@ expand-right = true
 
 format-spacing = 1
 
-;;Open the menu
+;; Open the menu
 label-open = "    "
 label-open-foreground = #FFF
 
-;;Close the menu
+;; Close the menu
 label-close = 
 label-close-foreground = ${colors.secondary}
 label-separator = "    "
@@ -193,8 +193,8 @@ menu-8-1-exec = xset dpms force off
 
 ;; Power: Reboot
 menu-8-2 = 
-menu-8-2-exec = reboot
+menu-8-2-exec = shutdown -r now
 
-;; Power: Off
+;; Power: Shutdown
 menu-8-3 = "    "
-menu-8-3-exec = poweroff
+menu-8-3-exec = shutdown -h now
