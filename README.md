@@ -103,6 +103,7 @@ This section goes through each module and explains what each button does (going 
     * Power
         * Back to main menu
         * Screen off
+        * Lock
         * Reboot
         * Shutdown
 

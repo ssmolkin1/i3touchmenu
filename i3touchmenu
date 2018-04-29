@@ -191,10 +191,14 @@ menu-8-0-exec = menu-open-0
 menu-8-1 = 
 menu-8-1-exec = xset dpms force off 
 
+;; Power: Lock
+menu-8-2 = 
+menu-8-2-exec = i3lock
+
 ;; Power: Reboot
-menu-8-2 = 
-menu-8-2-exec = shutdown -r now
+menu-8-3 = 
+menu-8-3-exec = shutdown -r now
 
 ;; Power: Shutdown
-menu-8-3 = "    "
-menu-8-3-exec = shutdown -h now
+menu-8-4 = "    "
+menu-8-4-exec = shutdown -h now
