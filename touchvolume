@@ -12,8 +12,8 @@ content="  "
 content-foreground=#fff
 click-left=pactl set-sink-volume 0 -5% 
 
-[module/touchvolmute]
-;; Volume down
+[module/touchvolup]
+;; Volume up
 type=custom/text
 content="    "
 content-foreground=#fff
