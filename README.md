@@ -38,7 +38,7 @@ I use `onboard` as my on-screen keyboard, and it works fairly well with i3 out o
 ```bash
 exec --no-startup-id onboard &
 ```
-This will actually launch a tray icon that you can click to show and hide i3. However, I prefer to have a separate button for this next to my other touch controls, rather than in the tray. However, the `touchkeyboard` module only shows the keyboard, it won't hide it. However, the "compact" and "full" keyboard layouts have an "X" button in the right hand corner that will hide the keyboard, so that works well enough for me. 
+This will also launch a tray icon that you can click to show and hide onboard. However, I prefer to have an additional button for this next to my other touch controls, rather than just in the tray. 
 
 ### touchvolume and touchbrightness
 I use `pactl` for audio controls and `xbacklight` for brightness. If you use something else, you will want to configure with the approriate commands. You can also adjust the increments/decrements from within the command.
