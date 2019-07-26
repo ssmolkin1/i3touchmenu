@@ -7,7 +7,7 @@ Using a tiling window manager makes a lot of sense for a tablet. While that may 
 ## Before you install
 Assuming you already have `polybar` installed, you'll also need [fontawesome](https://github.com/FortAwesome/Font-Awesome).
 
-You'll probably want on on-screen keyboard as well. By default, the keyboard button provided by this repo is set up to use `onboard`, which works well with i3 out of the box. More on configuration below.
+You'll probably want an on-screen keyboard as well. By default, the keyboard button provided by this repo is set up to use `onboard`, which works well with i3 out of the box. More on configuration below.
 
 ## Installation
 First, you'll want to configure polybar to work with font-awsome by putting something like this in your `~/.config/polybar/config`
@@ -124,7 +124,7 @@ This section goes through each module and explains what each button does (going 
 
 ### touchkeyboard
 
-* Open onscreen keyboard (onboard)
+* Open onscreen keyboard (`onboard`)
 
 ## Polybar issues
 There are a few issues with `polybar` which need some special explanation.
